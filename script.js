@@ -1,5 +1,5 @@
 let openButton = document.getElementById("openModal");
-let closeButton =  document.getElementById("close-modal");
+let closeButton =  document.getElementsByClassName("close-modal")[0];
 let firstDiv =  document.getElementsByClassName("modal")[0];
 
 function openModal(){
