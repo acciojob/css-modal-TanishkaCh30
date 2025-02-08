@@ -13,3 +13,8 @@ function closeModal() {
 
 openButton.addEventListener("click" , openModal);
 closeButton.addEventListener("click", closeModal);
+document.addEventListener("click", function(event) {
+    if (firstDiv.classList.contains('active') && !firstDiv.contains(event.target) && event.target !== openButton) {
+        closeModal();
+    }
+});
