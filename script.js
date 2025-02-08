@@ -2,6 +2,12 @@ let openButton = document.getElementById("openModal");
 let closeButton =  document.getElementsByClassName("close-modal")[0];
 let firstDiv =  document.getElementsByClassName("modal")[0];
 
+let modalContent = document.getElementById("modal-content");
+
+modalContent.addEventListener("click", function(event) {
+    event.stopPropagation();
+});
+
 function openModal(){
 	firstDiv.classList.add('active');
 }
